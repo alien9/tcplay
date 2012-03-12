@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F18027BB150DC251000DB9E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18027BA150DC251000DB9E5 /* UIKit.framework */; };
+		F18027BD150DC251000DB9E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18027BC150DC251000DB9E5 /* Foundation.framework */; };
+		F18027BF150DC251000DB9E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18027BE150DC251000DB9E5 /* CoreGraphics.framework */; };
+		F18027C5150DC251000DB9E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F18027C3150DC251000DB9E5 /* InfoPlist.strings */; };
+		F18027C7150DC251000DB9E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F18027C6150DC251000DB9E5 /* main.m */; };
+		F18027CB150DC251000DB9E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F18027CA150DC251000DB9E5 /* AppDelegate.m */; };
+		F18027CE150DC251000DB9E5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F18027CC150DC251000DB9E5 /* MainStoryboard.storyboard */; };
+		F18027D1150DC251000DB9E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F18027D0150DC251000DB9E5 /* ViewController.m */; };
+		F18027D9150DC251000DB9E5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18027D8150DC251000DB9E5 /* SenTestingKit.framework */; };
+		F18027DA150DC251000DB9E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18027BA150DC251000DB9E5 /* UIKit.framework */; };
+		F18027DB150DC251000DB9E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18027BC150DC251000DB9E5 /* Foundation.framework */; };
+		F18027E3150DC251000DB9E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F18027E1150DC251000DB9E5 /* InfoPlist.strings */; };
+		F18027E6150DC251000DB9E5 /* tcplayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F18027E5150DC251000DB9E5 /* tcplayTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F18027DC150DC251000DB9E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F18027AD150DC251000DB9E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F18027B5150DC251000DB9E5;
+			remoteInfo = tcplay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F18027B6150DC251000DB9E5 /* tcplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tcplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F18027BA150DC251000DB9E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F18027BC150DC251000DB9E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F18027BE150DC251000DB9E5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F18027C2150DC251000DB9E5 /* tcplay-Info.plist */ = {isa = PBXFileReference; path = "tcplay-Info.plist"; sourceTree = "<group>"; };
+		F18027C4150DC251000DB9E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F18027C6150DC251000DB9E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F18027C8150DC251000DB9E5 /* tcplay-Prefix.pch */ = {isa = PBXFileReference; path = "tcplay-Prefix.pch"; sourceTree = "<group>"; };
+		F18027C9150DC251000DB9E5 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		F18027CA150DC251000DB9E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F18027CD150DC251000DB9E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		F18027CF150DC251000DB9E5 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		F18027D0150DC251000DB9E5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F18027D7150DC251000DB9E5 /* tcplayTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tcplayTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F18027D8150DC251000DB9E5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F18027E0150DC251000DB9E5 /* tcplayTests-Info.plist */ = {isa = PBXFileReference; path = "tcplayTests-Info.plist"; sourceTree = "<group>"; };
+		F18027E2150DC251000DB9E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F18027E4150DC251000DB9E5 /* tcplayTests.h */ = {isa = PBXFileReference; path = tcplayTests.h; sourceTree = "<group>"; };
+		F18027E5150DC251000DB9E5 /* tcplayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tcplayTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F18027B3150DC251000DB9E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F18027BB150DC251000DB9E5 /* UIKit.framework in Frameworks */,
+				F18027BD150DC251000DB9E5 /* Foundation.framework in Frameworks */,
+				F18027BF150DC251000DB9E5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F18027D3150DC251000DB9E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F18027D9150DC251000DB9E5 /* SenTestingKit.framework in Frameworks */,
+				F18027DA150DC251000DB9E5 /* UIKit.framework in Frameworks */,
+				F18027DB150DC251000DB9E5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F18027AB150DC251000DB9E5 = {
+			isa = PBXGroup;
+			children = (
+				F18027C0150DC251000DB9E5 /* tcplay */,
+				F18027DE150DC251000DB9E5 /* tcplayTests */,
+				F18027B9150DC251000DB9E5 /* Frameworks */,
+				F18027B7150DC251000DB9E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F18027B7150DC251000DB9E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F18027B6150DC251000DB9E5 /* tcplay.app */,
+				F18027D7150DC251000DB9E5 /* tcplayTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F18027B9150DC251000DB9E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F18027BA150DC251000DB9E5 /* UIKit.framework */,
+				F18027BC150DC251000DB9E5 /* Foundation.framework */,
+				F18027BE150DC251000DB9E5 /* CoreGraphics.framework */,
+				F18027D8150DC251000DB9E5 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F18027C0150DC251000DB9E5 /* tcplay */ = {
+			isa = PBXGroup;
+			children = (
+				F18027C9150DC251000DB9E5 /* AppDelegate.h */,
+				F18027CA150DC251000DB9E5 /* AppDelegate.m */,
+				F18027CC150DC251000DB9E5 /* MainStoryboard.storyboard */,
+				F18027CF150DC251000DB9E5 /* ViewController.h */,
+				F18027D0150DC251000DB9E5 /* ViewController.m */,
+				F18027C1150DC251000DB9E5 /* Supporting Files */,
+			);
+			path = tcplay;
+			sourceTree = "<group>";
+		};
+		F18027C1150DC251000DB9E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F18027C2150DC251000DB9E5 /* tcplay-Info.plist */,
+				F18027C3150DC251000DB9E5 /* InfoPlist.strings */,
+				F18027C6150DC251000DB9E5 /* main.m */,
+				F18027C8150DC251000DB9E5 /* tcplay-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F18027DE150DC251000DB9E5 /* tcplayTests */ = {
+			isa = PBXGroup;
+			children = (
+				F18027E4150DC251000DB9E5 /* tcplayTests.h */,
+				F18027E5150DC251000DB9E5 /* tcplayTests.m */,
+				F18027DF150DC251000DB9E5 /* Supporting Files */,
+			);
+			path = tcplayTests;
+			sourceTree = "<group>";
+		};
+		F18027DF150DC251000DB9E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F18027E0150DC251000DB9E5 /* tcplayTests-Info.plist */,
+				F18027E1150DC251000DB9E5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F18027B5150DC251000DB9E5 /* tcplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F18027E9150DC251000DB9E5 /* Build configuration list for PBXNativeTarget "tcplay" */;
+			buildPhases = (
+				F18027B2150DC251000DB9E5 /* Sources */,
+				F18027B3150DC251000DB9E5 /* Frameworks */,
+				F18027B4150DC251000DB9E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tcplay;
+			productName = tcplay;
+			productReference = F18027B6150DC251000DB9E5 /* tcplay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F18027D6150DC251000DB9E5 /* tcplayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F18027EC150DC251000DB9E5 /* Build configuration list for PBXNativeTarget "tcplayTests" */;
+			buildPhases = (
+				F18027D2150DC251000DB9E5 /* Sources */,
+				F18027D3150DC251000DB9E5 /* Frameworks */,
+				F18027D4150DC251000DB9E5 /* Resources */,
+				F18027D5150DC251000DB9E5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F18027DD150DC251000DB9E5 /* PBXTargetDependency */,
+			);
+			name = tcplayTests;
+			productName = tcplayTests;
+			productReference = F18027D7150DC251000DB9E5 /* tcplayTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F18027AD150DC251000DB9E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = F18027B0150DC251000DB9E5 /* Build configuration list for PBXProject "tcplay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F18027AB150DC251000DB9E5;
+			productRefGroup = F18027B7150DC251000DB9E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F18027B5150DC251000DB9E5 /* tcplay */,
+				F18027D6150DC251000DB9E5 /* tcplayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F18027B4150DC251000DB9E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F18027C5150DC251000DB9E5 /* InfoPlist.strings in Resources */,
+				F18027CE150DC251000DB9E5 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F18027D4150DC251000DB9E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F18027E3150DC251000DB9E5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F18027D5150DC251000DB9E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F18027B2150DC251000DB9E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F18027C7150DC251000DB9E5 /* main.m in Sources */,
+				F18027CB150DC251000DB9E5 /* AppDelegate.m in Sources */,
+				F18027D1150DC251000DB9E5 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F18027D2150DC251000DB9E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F18027E6150DC251000DB9E5 /* tcplayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F18027DD150DC251000DB9E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F18027B5150DC251000DB9E5 /* tcplay */;
+			targetProxy = F18027DC150DC251000DB9E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F18027C3150DC251000DB9E5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F18027C4150DC251000DB9E5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F18027CC150DC251000DB9E5 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F18027CD150DC251000DB9E5 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		F18027E1150DC251000DB9E5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F18027E2150DC251000DB9E5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F18027E7150DC251000DB9E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F18027E8150DC251000DB9E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F18027EA150DC251000DB9E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tcplay/tcplay-Prefix.pch";
+				INFOPLIST_FILE = "tcplay/tcplay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F18027EB150DC251000DB9E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tcplay/tcplay-Prefix.pch";
+				INFOPLIST_FILE = "tcplay/tcplay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F18027ED150DC251000DB9E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tcplay.app/tcplay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tcplay/tcplay-Prefix.pch";
+				INFOPLIST_FILE = "tcplayTests/tcplayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F18027EE150DC251000DB9E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tcplay.app/tcplay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tcplay/tcplay-Prefix.pch";
+				INFOPLIST_FILE = "tcplayTests/tcplayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F18027B0150DC251000DB9E5 /* Build configuration list for PBXProject "tcplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F18027E7150DC251000DB9E5 /* Debug */,
+				F18027E8150DC251000DB9E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F18027E9150DC251000DB9E5 /* Build configuration list for PBXNativeTarget "tcplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F18027EA150DC251000DB9E5 /* Debug */,
+				F18027EB150DC251000DB9E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F18027EC150DC251000DB9E5 /* Build configuration list for PBXNativeTarget "tcplayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F18027ED150DC251000DB9E5 /* Debug */,
+				F18027EE150DC251000DB9E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F18027AD150DC251000DB9E5 /* Project object */;
+}
