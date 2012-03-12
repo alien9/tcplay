@@ -2,7 +2,6 @@
 
 switch($_SERVER['SERVER_NAME']){
 case 'localhost':
-	//Local
 	$dsn = "mysql:localhost;port=3306;dbname=tcplay";
 	$usuario = "tcplay";
 	$senha = "K4VyDnU8Y7xx4rTW";	
@@ -17,7 +16,9 @@ case 'metlife.this':
 	$opcoes="";
 break;
 default:
-	//Produção
+	$dsn = "mysql:localhost;port=3306;dbname=tcplay";
+	$usuario = "tcplay";
+	$senha = "K4VyDnU8Y7xx4rTW";	
 }
 
 $opcoes = array(
