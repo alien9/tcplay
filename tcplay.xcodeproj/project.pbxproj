@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1B64399150DAD6600ECD342 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B64398150DAD6600ECD342 /* UIKit.framework */; };
+		F1B6439B150DAD6600ECD342 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B6439A150DAD6600ECD342 /* Foundation.framework */; };
+		F1B6439D150DAD6600ECD342 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B6439C150DAD6600ECD342 /* CoreGraphics.framework */; };
+		F1B643A3150DAD6600ECD342 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1B643A1150DAD6600ECD342 /* InfoPlist.strings */; };
+		F1B643A5150DAD6600ECD342 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B643A4150DAD6600ECD342 /* main.m */; };
+		F1B643A9150DAD6600ECD342 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B643A8150DAD6600ECD342 /* AppDelegate.m */; };
+		F1B643B1150DAD6600ECD342 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B643B0150DAD6600ECD342 /* SenTestingKit.framework */; };
+		F1B643B2150DAD6600ECD342 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B64398150DAD6600ECD342 /* UIKit.framework */; };
+		F1B643B3150DAD6600ECD342 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B6439A150DAD6600ECD342 /* Foundation.framework */; };
+		F1B643BB150DAD6600ECD342 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1B643B9150DAD6600ECD342 /* InfoPlist.strings */; };
+		F1B643BE150DAD6600ECD342 /* tcplayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B643BD150DAD6600ECD342 /* tcplayTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1B643B4150DAD6600ECD342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1B6438B150DAD6600ECD342 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1B64393150DAD6600ECD342;
+			remoteInfo = tcplay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F1B64394150DAD6600ECD342 /* tcplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tcplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B64398150DAD6600ECD342 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F1B6439A150DAD6600ECD342 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F1B6439C150DAD6600ECD342 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F1B643A0150DAD6600ECD342 /* tcplay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tcplay-Info.plist"; sourceTree = "<group>"; };
+		F1B643A2150DAD6600ECD342 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F1B643A4150DAD6600ECD342 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1B643A6150DAD6600ECD342 /* tcplay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tcplay-Prefix.pch"; sourceTree = "<group>"; };
+		F1B643A7150DAD6600ECD342 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F1B643A8150DAD6600ECD342 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F1B643AF150DAD6600ECD342 /* tcplayTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tcplayTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B643B0150DAD6600ECD342 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F1B643B8150DAD6600ECD342 /* tcplayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tcplayTests-Info.plist"; sourceTree = "<group>"; };
+		F1B643BA150DAD6600ECD342 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F1B643BC150DAD6600ECD342 /* tcplayTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tcplayTests.h; sourceTree = "<group>"; };
+		F1B643BD150DAD6600ECD342 /* tcplayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tcplayTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1B64391150DAD6600ECD342 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B64399150DAD6600ECD342 /* UIKit.framework in Frameworks */,
+				F1B6439B150DAD6600ECD342 /* Foundation.framework in Frameworks */,
+				F1B6439D150DAD6600ECD342 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B643AB150DAD6600ECD342 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B643B1150DAD6600ECD342 /* SenTestingKit.framework in Frameworks */,
+				F1B643B2150DAD6600ECD342 /* UIKit.framework in Frameworks */,
+				F1B643B3150DAD6600ECD342 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1B64389150DAD6600ECD342 = {
+			isa = PBXGroup;
+			children = (
+				F1B6439E150DAD6600ECD342 /* tcplay */,
+				F1B643B6150DAD6600ECD342 /* tcplayTests */,
+				F1B64397150DAD6600ECD342 /* Frameworks */,
+				F1B64395150DAD6600ECD342 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1B64395150DAD6600ECD342 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1B64394150DAD6600ECD342 /* tcplay.app */,
+				F1B643AF150DAD6600ECD342 /* tcplayTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1B64397150DAD6600ECD342 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1B64398150DAD6600ECD342 /* UIKit.framework */,
+				F1B6439A150DAD6600ECD342 /* Foundation.framework */,
+				F1B6439C150DAD6600ECD342 /* CoreGraphics.framework */,
+				F1B643B0150DAD6600ECD342 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1B6439E150DAD6600ECD342 /* tcplay */ = {
+			isa = PBXGroup;
+			children = (
+				F1B643A7150DAD6600ECD342 /* AppDelegate.h */,
+				F1B643A8150DAD6600ECD342 /* AppDelegate.m */,
+				F1B6439F150DAD6600ECD342 /* Supporting Files */,
+			);
+			path = tcplay;
+			sourceTree = "<group>";
+		};
+		F1B6439F150DAD6600ECD342 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1B643A0150DAD6600ECD342 /* tcplay-Info.plist */,
+				F1B643A1150DAD6600ECD342 /* InfoPlist.strings */,
+				F1B643A4150DAD6600ECD342 /* main.m */,
+				F1B643A6150DAD6600ECD342 /* tcplay-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F1B643B6150DAD6600ECD342 /* tcplayTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1B643BC150DAD6600ECD342 /* tcplayTests.h */,
+				F1B643BD150DAD6600ECD342 /* tcplayTests.m */,
+				F1B643B7150DAD6600ECD342 /* Supporting Files */,
+			);
+			path = tcplayTests;
+			sourceTree = "<group>";
+		};
+		F1B643B7150DAD6600ECD342 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1B643B8150DAD6600ECD342 /* tcplayTests-Info.plist */,
+				F1B643B9150DAD6600ECD342 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1B64393150DAD6600ECD342 /* tcplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1B643C1150DAD6600ECD342 /* Build configuration list for PBXNativeTarget "tcplay" */;
+			buildPhases = (
+				F1B64390150DAD6600ECD342 /* Sources */,
+				F1B64391150DAD6600ECD342 /* Frameworks */,
+				F1B64392150DAD6600ECD342 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tcplay;
+			productName = tcplay;
+			productReference = F1B64394150DAD6600ECD342 /* tcplay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1B643AE150DAD6600ECD342 /* tcplayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1B643C4150DAD6600ECD342 /* Build configuration list for PBXNativeTarget "tcplayTests" */;
+			buildPhases = (
+				F1B643AA150DAD6600ECD342 /* Sources */,
+				F1B643AB150DAD6600ECD342 /* Frameworks */,
+				F1B643AC150DAD6600ECD342 /* Resources */,
+				F1B643AD150DAD6600ECD342 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1B643B5150DAD6600ECD342 /* PBXTargetDependency */,
+			);
+			name = tcplayTests;
+			productName = tcplayTests;
+			productReference = F1B643AF150DAD6600ECD342 /* tcplayTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1B6438B150DAD6600ECD342 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = F1B6438E150DAD6600ECD342 /* Build configuration list for PBXProject "tcplay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F1B64389150DAD6600ECD342;
+			productRefGroup = F1B64395150DAD6600ECD342 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1B64393150DAD6600ECD342 /* tcplay */,
+				F1B643AE150DAD6600ECD342 /* tcplayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1B64392150DAD6600ECD342 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B643A3150DAD6600ECD342 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B643AC150DAD6600ECD342 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B643BB150DAD6600ECD342 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F1B643AD150DAD6600ECD342 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1B64390150DAD6600ECD342 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B643A5150DAD6600ECD342 /* main.m in Sources */,
+				F1B643A9150DAD6600ECD342 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B643AA150DAD6600ECD342 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B643BE150DAD6600ECD342 /* tcplayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1B643B5150DAD6600ECD342 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1B64393150DAD6600ECD342 /* tcplay */;
+			targetProxy = F1B643B4150DAD6600ECD342 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1B643A1150DAD6600ECD342 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1B643A2150DAD6600ECD342 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F1B643B9150DAD6600ECD342 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1B643BA150DAD6600ECD342 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1B643BF150DAD6600ECD342 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F1B643C0150DAD6600ECD342 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1B643C2150DAD6600ECD342 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tcplay/tcplay-Prefix.pch";
+				INFOPLIST_FILE = "tcplay/tcplay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F1B643C3150DAD6600ECD342 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tcplay/tcplay-Prefix.pch";
+				INFOPLIST_FILE = "tcplay/tcplay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F1B643C5150DAD6600ECD342 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tcplay.app/tcplay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tcplay/tcplay-Prefix.pch";
+				INFOPLIST_FILE = "tcplayTests/tcplayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F1B643C6150DAD6600ECD342 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tcplay.app/tcplay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tcplay/tcplay-Prefix.pch";
+				INFOPLIST_FILE = "tcplayTests/tcplayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1B6438E150DAD6600ECD342 /* Build configuration list for PBXProject "tcplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1B643BF150DAD6600ECD342 /* Debug */,
+				F1B643C0150DAD6600ECD342 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1B643C1150DAD6600ECD342 /* Build configuration list for PBXNativeTarget "tcplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1B643C2150DAD6600ECD342 /* Debug */,
+				F1B643C3150DAD6600ECD342 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F1B643C4150DAD6600ECD342 /* Build configuration list for PBXNativeTarget "tcplayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1B643C5150DAD6600ECD342 /* Debug */,
+				F1B643C6150DAD6600ECD342 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1B6438B150DAD6600ECD342 /* Project object */;
+}
