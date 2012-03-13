@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    IBOutlet UILabel *show;
+    NSMutableData *responseData;
+}
+@property (nonatomic, retain) UILabel *show;
+
+- (IBAction)pinga;
 
 @end
