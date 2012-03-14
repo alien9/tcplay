@@ -1,0 +1,20 @@
+body, td, th { font-family: "Trebuchet MS"; font-size:11px; margin:0px; }
+td{ padding-left:3px; }
+table{ width:100%; }
+th, th a{ background-color:#666666; color:#FFFFFF; padding:5px; font-weight:bold; }
+a{ color:#996600; }
+h1{ font-size:24px; padding-top:5px; padding-left:23% } /*titulos */
+h2{ font-size:16px; }
+img{ border:0px; }
+#logo{ text-align:left; padding-left:10px;}
+#menu{ text-align:center; background-color:#000000; padding:7px; color:#FFFFFF; font-size:14px; }
+#menu a{color:#FFFFFF; margin-left:10px; margin-right:10px; }
+#conteudo{ text-align:left; padding-left:10px; padding-right:10px; }
+#interno{ background-color:#F5F5F5;  vertical-align:top; padding:10px; padding-left:16%; }
+.table_listas{ background-color:#B4B4B4; }
+.tr_escura{ background-color:#CCCCCC; }
+.tr_clara{ background-color:#EEEEEE; }
+.tr_over{ background-color:#FFFF00; }
+.alerta{ color:#FF0000; }
+.inserir_novo{ background-color:#666; padding:5px; margin:4px; border-radius:3px; position:relative; bottom:10px }
+.inserir_novo a{ color:#FFF; text-decoration:none }
