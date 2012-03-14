@@ -17,7 +17,7 @@ if($_REQUEST['ordena']){ $ordena = $_REQUEST['ordena']; }else{ $ordena = 'id'; }
     <th><a href="?ordena=artist">Artista</a></th>
     <th><a href="?ordena=title">Música</a></th>
     <th><a href="?ordena=hora DESC">Hora</a></th>
-    <th width="40"><a href="?ordena=pedidos DESC">Entregue</a></th>
+    <th width="40"><a href="?ordena=retirado DESC">Entregue</a></th>
   </tr>
   <?
   
