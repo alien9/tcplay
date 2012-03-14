@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F101C99C150FA99300E059D7 /* tcplay.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F101C99B150FA99300E059D7 /* tcplay.mp4 */; };
+		F101C99D150FA99300E059D7 /* tcplay.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F101C99B150FA99300E059D7 /* tcplay.mp4 */; };
+		F101C9A0150FEA6F00E059D7 /* MusicaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F101C99F150FEA6F00E059D7 /* MusicaCell.m */; };
+		F101C9A1150FEA6F00E059D7 /* MusicaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F101C99F150FEA6F00E059D7 /* MusicaCell.m */; };
+		F101C9A4150FEB0600E059D7 /* MusicaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F101C9A3150FEB0600E059D7 /* MusicaViewController.m */; };
+		F101C9A5150FEB0600E059D7 /* MusicaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F101C9A3150FEB0600E059D7 /* MusicaViewController.m */; };
+		F101C9A8150FEB7A00E059D7 /* Musica.m in Sources */ = {isa = PBXBuildFile; fileRef = F101C9A7150FEB7A00E059D7 /* Musica.m */; };
+		F101C9A9150FEB7A00E059D7 /* Musica.m in Sources */ = {isa = PBXBuildFile; fileRef = F101C9A7150FEB7A00E059D7 /* Musica.m */; };
 		F18027BB150DC251000DB9E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18027BA150DC251000DB9E5 /* UIKit.framework */; };
 		F18027BD150DC251000DB9E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18027BC150DC251000DB9E5 /* Foundation.framework */; };
 		F18027BF150DC251000DB9E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18027BE150DC251000DB9E5 /* CoreGraphics.framework */; };
@@ -46,6 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F101C99B150FA99300E059D7 /* tcplay.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = tcplay.mp4; path = Resources/tcplay.mp4; sourceTree = "<group>"; };
+		F101C99E150FEA6F00E059D7 /* MusicaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicaCell.h; sourceTree = "<group>"; };
+		F101C99F150FEA6F00E059D7 /* MusicaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicaCell.m; sourceTree = "<group>"; };
+		F101C9A2150FEB0600E059D7 /* MusicaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicaViewController.h; sourceTree = "<group>"; };
+		F101C9A3150FEB0600E059D7 /* MusicaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicaViewController.m; sourceTree = "<group>"; };
+		F101C9A6150FEB7A00E059D7 /* Musica.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Musica.h; sourceTree = "<group>"; };
+		F101C9A7150FEB7A00E059D7 /* Musica.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Musica.m; sourceTree = "<group>"; };
 		F18027B6150DC251000DB9E5 /* tcplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tcplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18027BA150DC251000DB9E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F18027BC150DC251000DB9E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -118,10 +133,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F101C998150FA26000E059D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F101C99B150FA99300E059D7 /* tcplay.mp4 */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		F18027AB150DC251000DB9E5 = {
 			isa = PBXGroup;
 			children = (
-				F1F98C61150EEE3D0002259B /* MediaPlayer.framework */,
 				F18027C0150DC251000DB9E5 /* tcplay */,
 				F18027DE150DC251000DB9E5 /* tcplayTests */,
 				F18027B9150DC251000DB9E5 /* Frameworks */,
@@ -141,6 +163,7 @@
 		F18027B9150DC251000DB9E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F1F98C61150EEE3D0002259B /* MediaPlayer.framework */,
 				F18027BA150DC251000DB9E5 /* UIKit.framework */,
 				F18027BC150DC251000DB9E5 /* Foundation.framework */,
 				F18027BE150DC251000DB9E5 /* CoreGraphics.framework */,
@@ -152,10 +175,17 @@
 		F18027C0150DC251000DB9E5 /* tcplay */ = {
 			isa = PBXGroup;
 			children = (
+				F101C998150FA26000E059D7 /* Resources */,
 				F1FA22D4150E28FF00A172AA /* Classes */,
 				F18027C9150DC251000DB9E5 /* AppDelegate.h */,
 				F18027CA150DC251000DB9E5 /* AppDelegate.m */,
 				F18027CC150DC251000DB9E5 /* MainStoryboard.storyboard */,
+				F101C9A2150FEB0600E059D7 /* MusicaViewController.h */,
+				F101C9A6150FEB7A00E059D7 /* Musica.h */,
+				F101C9A7150FEB7A00E059D7 /* Musica.m */,
+				F101C9A3150FEB0600E059D7 /* MusicaViewController.m */,
+				F101C99E150FEA6F00E059D7 /* MusicaCell.h */,
+				F101C99F150FEA6F00E059D7 /* MusicaCell.m */,
 				F18027CF150DC251000DB9E5 /* ViewController.h */,
 				F18027D0150DC251000DB9E5 /* ViewController.m */,
 				F18027C1150DC251000DB9E5 /* Supporting Files */,
@@ -298,6 +328,7 @@
 			files = (
 				F18027C5150DC251000DB9E5 /* InfoPlist.strings in Resources */,
 				F18027CE150DC251000DB9E5 /* MainStoryboard.storyboard in Resources */,
+				F101C99C150FA99300E059D7 /* tcplay.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F18027E3150DC251000DB9E5 /* InfoPlist.strings in Resources */,
+				F101C99D150FA99300E059D7 /* tcplay.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +379,9 @@
 				F1FA22F7150E28FF00A172AA /* SBJsonTokeniser.m in Sources */,
 				F1FA22F8150E28FF00A172AA /* SBJsonUTF8Stream.m in Sources */,
 				F1FA22F9150E28FF00A172AA /* SBJsonWriter.m in Sources */,
+				F101C9A0150FEA6F00E059D7 /* MusicaCell.m in Sources */,
+				F101C9A4150FEB0600E059D7 /* MusicaViewController.m in Sources */,
+				F101C9A8150FEB7A00E059D7 /* Musica.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +390,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F18027E6150DC251000DB9E5 /* tcplayTests.m in Sources */,
+				F101C9A1150FEA6F00E059D7 /* MusicaCell.m in Sources */,
+				F101C9A5150FEB0600E059D7 /* MusicaViewController.m in Sources */,
+				F101C9A9150FEB7A00E059D7 /* Musica.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +489,7 @@
 				INFOPLIST_FILE = "tcplay/tcplay-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -463,6 +502,7 @@
 				INFOPLIST_FILE = "tcplay/tcplay-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -7,9 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "Musica.h"
+#import "MusicaViewController.h"
 
-@implementation AppDelegate
-
+@implementation AppDelegate{
+    NSMutableArray *songs;
+}
 @synthesize window = _window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Musica.h"
+#import "MusicaViewController.h"
 @interface ViewController : UIViewController
 {
     IBOutlet UILabel *show;
     NSMutableData *responseData;
+    NSArray *rows;
 }
-@property (nonatomic, retain) UILabel *show;
+@property (nonatomic) UILabel *show;
 
 - (IBAction)pinga;
 
