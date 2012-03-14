@@ -1,5 +1,5 @@
 //
-//  SongButton.h
+//  DjController.h
 //  tcplay
 //
 //  Created by Tiago Barufi on 14/03/12.
@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "Musica.h"
 
-@interface SongButton : UIButton
+@interface DjController : UIViewController{
+    IBOutlet UILabel *__weak palavras;
+}
 @property (nonatomic, assign) Musica *song;
 
 @end

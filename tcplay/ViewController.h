@@ -14,7 +14,6 @@
     IBOutlet UILabel *__weak show;
     IBOutlet UITableView *__weak tw;
     NSMutableData *responseData;
-    NSArray *rows;
     NSArray *generos;
 }
 @property (weak, nonatomic) UITableView *tw;

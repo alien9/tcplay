@@ -22,6 +22,7 @@
 NSMutableData *responseData;
 NSURL *videoURL;
 NSString *genero;
+NSArray *rows;
 - (void)viewDidLoad
 {
     self.generos=[[NSArray alloc] init];
@@ -116,6 +117,7 @@ NSString *genero;
     return [self.generos count];
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"sending");
     if ([segue.identifier isEqualToString:@"vaivai"]) {
         NSMutableArray *mu = [[NSMutableArray alloc]init];
         for (int i = 0; i < [rows count]; i++){
@@ -123,15 +125,17 @@ NSString *genero;
                 [mu addObject:[rows objectAtIndex:i]];
             }
         }
+        NSLog(@"peganingas");
         MusicaViewController *ibcVC = [segue destinationViewController];
+        NSLog(@"mais");
         ibcVC.songs = mu;
+        NSLog(@"copiou");
     }
 }
 
 - (IBAction) walk:(id)sender {
     NSLog(@"Button pressed: %@", [sender currentTitle]);
     genero=[sender currentTitle];
-    show.text=@"Hello, World!";
     [self performSegueWithIdentifier: @"vaivai" sender: self];
 }
 
