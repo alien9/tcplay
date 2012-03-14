@@ -12,5 +12,6 @@
 @synthesize titulo;
 @synthesize performer;
 @synthesize rating;
+@synthesize genero;
 @synthesize id;
 @end

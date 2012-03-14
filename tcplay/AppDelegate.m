@@ -12,6 +12,7 @@
 
 @implementation AppDelegate{
     NSMutableArray *songs;
+    NSArray *generos;
 }
 @synthesize window = _window;
 

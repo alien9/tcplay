@@ -1,19 +1,19 @@
 //
-//  MusicaViewController.m
+//  GeneroViewController.m
 //  tcplay
 //
-//  Created by Tiago Barufi on 13/03/12.
+//  Created by Tiago Barufi on 14/03/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
-#import "Musica.h"
-#import "MusicaViewController.h"
-#import "Classes/SBJson.h"
-@interface MusicaViewController ()
+
+#import "GeneroViewController.h"
+
+@interface GeneroViewController ()
+
 @end
 
-@implementation MusicaViewController
-@synthesize songs;
-NSMutableData *responseData;
+@implementation GeneroViewController
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -56,17 +56,18 @@ NSMutableData *responseData;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [songs count];
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView 
-                             dequeueReusableCellWithIdentifier:@"song"];
-	Musica *m = [songs objectAtIndex:indexPath.row];
-    ((UILabel *)[cell viewWithTag:100]).text=m.titulo;
-    ((UILabel *)[cell viewWithTag:101]).text=m.performer;
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    // Configure the cell...
+    
     return cell;
 }
 
@@ -121,8 +122,5 @@ NSMutableData *responseData;
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
 }
-- (IBAction) pop:(id)sender {
-    NSLog(@"Button pressed: %@", [sender currentTitle]);
-    [self performSegueWithIdentifier: @"popo" sender: self];
-}
+
 @end

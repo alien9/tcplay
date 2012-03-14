@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import <MediaPlayer/MediaPlayer.h>
 #import <UIKit/UIKit.h>
 #import "Classes/SBJson.h"
 #import "Musica.h"
@@ -19,35 +18,19 @@
 
 @implementation ViewController
 @synthesize show;
+@synthesize tw;
+@synthesize generos;
 NSMutableData *responseData;
+NSURL *videoURL;
+NSString *genero;
 - (void)viewDidLoad
 {
-    NSString *url = [[NSBundle mainBundle]
-                     pathForResource:@"tcplay"
-                     ofType:@"mp4"];
-    MPMoviePlayerViewController *playerViewController = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL fileURLWithPath:url]];
-    
-    [[NSNotificationCenter defaultCenter]
-     addObserver:self
-     selector:@selector(movieFinishedCallback:)
-     name:MPMoviePlayerPlaybackDidFinishNotification
-     object:[playerViewController moviePlayer]];
-    
-    [self.view addSubview:playerViewController.view];
-    
-    //---play movie---
-    MPMoviePlayerController *player = [playerViewController moviePlayer];
-    
-    player.view.frame = CGRectMake(184, 200, 400, 300);
-    [self.view addSubview:player.view];
-    
-    player.useApplicationAudioSession=NO;
-    [player play];
+    self.generos=[[NSArray alloc] init];
     
     [super viewDidLoad];
     show.text=@"peganingas";
     [show setText:@"Hello, World!"];
-
+    
 	// Do any additional setup after loading the view, typically from a nib.
     NSString *jsonString = [NSString stringWithString:@"{\"foo\": \"bar\"}"];
 	NSDictionary *dictionary = [jsonString JSONValue];
@@ -55,21 +38,26 @@ NSMutableData *responseData;
     [self pull];
 }
 
-- (void) movieFinishedCallback:(NSNotification*) aNotification {
-    MPMoviePlayerController *player = [aNotification object];
-    [[NSNotificationCenter defaultCenter]
-     removeObserver:self
-     name:MPMoviePlayerPlaybackDidFinishNotification
-     object:player];
-    [player stop];
-//    [self.view removeFromSuperView];
- //   [player autorelease];    
-}
 
 - (void)pull{
     responseData = [NSMutableData data];
 	NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.0.105/works/tcplay/backend/juke.php"]];
 	[[NSURLConnection alloc] initWithRequest:request delegate:self];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *SimpleTableIdentifier = @"Generos";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SimpleTableIdentifier];
+
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:SimpleTableIdentifier];
+    }
+
+    NSUInteger row = [indexPath row];
+    [((UIButton *)[cell viewWithTag:1]) setTitle:[self.generos objectAtIndex:row] forState:UIControlStateNormal];
+
+    return cell;
 }
 
 
@@ -79,10 +67,10 @@ NSMutableData *responseData;
     // Release any retained subviews of the main view.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return YES;
-}
+//- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+//{
+//    return YES;
+//}
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
 	[responseData setLength:0];
@@ -100,7 +88,7 @@ NSMutableData *responseData;
     
 	NSString *responseString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
 	NSArray *trax = [responseString JSONValue];
-    
+    NSMutableArray *genus=[[NSMutableArray alloc] init ];
 	NSMutableString *text = [NSMutableString stringWithString:@"Lucky numbers:\n"];
     NSMutableArray *ro = [[NSMutableArray alloc] init ];
     for (int i = 0; i < [trax count]; i++){
@@ -109,14 +97,20 @@ NSMutableData *responseData;
         s.titulo=[[trax objectAtIndex:i] objectForKey: @"title"];
         s.performer=[[trax objectAtIndex:i] objectForKey: @"artist"];
         s.id=(int)[[trax objectAtIndex:i] objectForKey: @"id"];
+        s.genero=[[trax objectAtIndex:i] objectForKey: @"genero"];
         [ro addObject: s];
+        if (![genus containsObject: s.genero]){
+            [genus addObject: s.genero];
+        }
     }
+    self.generos = genus;
     rows = [ro sortedArrayUsingComparator:^(id a, id b) {
         NSString *first = [(Musica*)a performer];
         NSString *second = [(Musica*)b performer];
         return [first compare:second];
     }];
 	show.text =  text;
+    [self.tw reloadData];
 }
 
 - (IBAction) pinga{
@@ -124,12 +118,28 @@ NSMutableData *responseData;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return[rows count];
+    return [self.generos count];
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"ShowTable"]) {
+    if ([segue.identifier isEqualToString:@"vaivai"]) {
+        NSMutableArray *mu = [[NSMutableArray alloc]init];
+        for (int i = 0; i < [rows count]; i++){
+            
+            NSLog([[rows objectAtIndex:i] genero]);
+            if([[[rows objectAtIndex:i] genero] isEqualToString: genero]){
+                [mu addObject:[rows objectAtIndex:i]];
+            }
+        }
         MusicaViewController *ibcVC = [segue destinationViewController];
-        ibcVC.songs = rows;
+        ibcVC.songs = mu;
     }
 }
+
+- (IBAction) walk:(id)sender {
+    NSLog(@"Button pressed: %@", [sender currentTitle]);
+    genero=[sender currentTitle];
+    show.text=@"Hello, World!";
+    [self performSegueWithIdentifier: @"vaivai" sender: self];
+}
+
 @end
