@@ -23,20 +23,20 @@
                                 <color key="textColor" red="1" green="0.29532231149999999" blue="0.3307063804" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="69" sectionHeaderHeight="22" sectionFooterHeight="22" id="2GU-yL-YoX">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="91" sectionHeaderHeight="22" sectionFooterHeight="22" id="2GU-yL-YoX">
                                 <rect key="frame" x="0.0" y="563" width="768" height="453"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <gestureRecognizers/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Generos" rowHeight="69" id="Ydo-bp-kfy">
-                                        <rect key="frame" x="0.0" y="22" width="768" height="69"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Generos" rowHeight="91" id="Ydo-bp-kfy">
+                                        <rect key="frame" x="0.0" y="22" width="768" height="91"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="68"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kZY-db-vxD">
-                                                    <rect key="frame" x="102" y="4" width="544" height="59"/>
+                                                    <rect key="frame" x="102" y="7" width="544" height="74"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                                     <state key="normal">
@@ -61,8 +61,8 @@
                                     <outlet property="delegate" destination="2" id="wrT-fP-0cd"/>
                                 </connections>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo_branco.jpg" id="jeA-GX-0iH">
-                                <rect key="frame" x="12" y="69" width="745" height="398"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo_preto.jpg" id="jeA-GX-0iH">
+                                <rect key="frame" x="12" y="11" width="745" height="516"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -217,7 +217,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo_branco.jpg" width="640" height="411"/>
+        <image name="logo_preto.jpg" width="600" height="450"/>
         <image name="play.png" width="68" height="69"/>
     </resources>
     <classes>
