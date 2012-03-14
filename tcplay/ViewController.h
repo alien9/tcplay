@@ -17,7 +17,6 @@
     NSArray *rows;
     NSArray *generos;
 }
-@property (weak, nonatomic) UILabel *show;
 @property (weak, nonatomic) UITableView *tw;
 @property(nonatomic, retain) NSArray *generos;
 

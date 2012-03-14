@@ -13,5 +13,6 @@
 @synthesize performer;
 @synthesize rating;
 @synthesize genero;
+@synthesize prize;
 @synthesize id;
 @end

@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 #import "Musica.h"
+#import "SongButton.h"
 #import "MusicaViewController.h"
 #import "Classes/SBJson.h"
 @interface MusicaViewController ()
@@ -67,6 +68,7 @@ NSMutableData *responseData;
 	Musica *m = [songs objectAtIndex:indexPath.row];
     ((UILabel *)[cell viewWithTag:100]).text=m.titulo;
     ((UILabel *)[cell viewWithTag:101]).text=m.performer;
+    ((SongButton *)[cell viewWithTag:1]).song=m;
     return cell;
 }
 

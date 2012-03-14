@@ -17,7 +17,6 @@
 @end
 
 @implementation ViewController
-@synthesize show;
 @synthesize tw;
 @synthesize generos;
 NSMutableData *responseData;
@@ -109,13 +108,9 @@ NSString *genero;
         NSString *second = [(Musica*)b performer];
         return [first compare:second];
     }];
-	show.text =  text;
     [self.tw reloadData];
 }
 
-- (IBAction) pinga{
-    show.text=@"Hello, World!";
-}
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [self.generos count];
@@ -124,8 +119,6 @@ NSString *genero;
     if ([segue.identifier isEqualToString:@"vaivai"]) {
         NSMutableArray *mu = [[NSMutableArray alloc]init];
         for (int i = 0; i < [rows count]; i++){
-            
-            NSLog([[rows objectAtIndex:i] genero]);
             if([[[rows objectAtIndex:i] genero] isEqualToString: genero]){
                 [mu addObject:[rows objectAtIndex:i]];
             }

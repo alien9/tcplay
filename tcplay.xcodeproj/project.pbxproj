@@ -31,8 +31,9 @@
 		F1C75BAC1510BE8B00108754 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = F1C75BAB1510BE8B00108754 /* play.png */; };
 		F1C75BAF1510C2F600108754 /* GeneroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C75BAE1510C2F500108754 /* GeneroViewController.m */; };
 		F1C75BB21510C5CA00108754 /* GeneroView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C75BB11510C5CA00108754 /* GeneroView.m */; };
-		F1C75BB515111A7E00108754 /* VideoSplashControllerViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C75BB415111A7E00108754 /* VideoSplashControllerViewViewController.m */; };
 		F1C75BB815111FBE00108754 /* Splash.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C75BB715111FBE00108754 /* Splash.m */; };
+		F1C75BBF151123FD00108754 /* logo_branco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1C75BBE151123FD00108754 /* logo_branco.jpg */; };
+		F1C75BC2151126B100108754 /* SongButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C75BC1151126B100108754 /* SongButton.m */; };
 		F1F98C62150EEE3D0002259B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F98C61150EEE3D0002259B /* MediaPlayer.framework */; };
 		F1FA22EE150E28FF00A172AA /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FA22D6150E28FF00A172AA /* NSObject+SBJson.m */; };
 		F1FA22EF150E28FF00A172AA /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FA22D9150E28FF00A172AA /* SBJsonParser.m */; };
@@ -90,10 +91,11 @@
 		F1C75BAE1510C2F500108754 /* GeneroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneroViewController.m; sourceTree = "<group>"; };
 		F1C75BB01510C5CA00108754 /* GeneroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneroView.h; sourceTree = "<group>"; };
 		F1C75BB11510C5CA00108754 /* GeneroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneroView.m; sourceTree = "<group>"; };
-		F1C75BB315111A7E00108754 /* VideoSplashControllerViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoSplashControllerViewViewController.h; sourceTree = "<group>"; };
-		F1C75BB415111A7E00108754 /* VideoSplashControllerViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoSplashControllerViewViewController.m; sourceTree = "<group>"; };
 		F1C75BB615111FBE00108754 /* Splash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Splash.h; sourceTree = "<group>"; };
 		F1C75BB715111FBE00108754 /* Splash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Splash.m; sourceTree = "<group>"; };
+		F1C75BBE151123FD00108754 /* logo_branco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo_branco.jpg; sourceTree = "<group>"; };
+		F1C75BC0151126B100108754 /* SongButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongButton.h; sourceTree = "<group>"; };
+		F1C75BC1151126B100108754 /* SongButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongButton.m; sourceTree = "<group>"; };
 		F1F98C61150EEE3D0002259B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		F1FA22D5150E28FF00A172AA /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
 		F1FA22D6150E28FF00A172AA /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 		F101C998150FA26000E059D7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F1C75BBE151123FD00108754 /* logo_branco.jpg */,
 				F1C75BAB1510BE8B00108754 /* play.png */,
 				F101C99B150FA99300E059D7 /* tcplay.mp4 */,
 			);
@@ -195,8 +198,8 @@
 				F18027C9150DC251000DB9E5 /* AppDelegate.h */,
 				F18027CA150DC251000DB9E5 /* AppDelegate.m */,
 				F18027CC150DC251000DB9E5 /* MainStoryboard.storyboard */,
-				F1C75BB315111A7E00108754 /* VideoSplashControllerViewViewController.h */,
-				F1C75BB415111A7E00108754 /* VideoSplashControllerViewViewController.m */,
+				F1C75BC0151126B100108754 /* SongButton.h */,
+				F1C75BC1151126B100108754 /* SongButton.m */,
 				F101C9A2150FEB0600E059D7 /* MusicaViewController.h */,
 				F1C75BAD1510C2F500108754 /* GeneroViewController.h */,
 				F1C75BAE1510C2F500108754 /* GeneroViewController.m */,
@@ -353,6 +356,7 @@
 				F18027CE150DC251000DB9E5 /* MainStoryboard.storyboard in Resources */,
 				F101C99C150FA99300E059D7 /* tcplay.mp4 in Resources */,
 				F1C75BAC1510BE8B00108754 /* play.png in Resources */,
+				F1C75BBF151123FD00108754 /* logo_branco.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,8 +412,8 @@
 				F101C9A8150FEB7A00E059D7 /* Musica.m in Sources */,
 				F1C75BAF1510C2F600108754 /* GeneroViewController.m in Sources */,
 				F1C75BB21510C5CA00108754 /* GeneroView.m in Sources */,
-				F1C75BB515111A7E00108754 /* VideoSplashControllerViewViewController.m in Sources */,
 				F1C75BB815111FBE00108754 /* Splash.m in Sources */,
+				F1C75BC2151126B100108754 /* SongButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

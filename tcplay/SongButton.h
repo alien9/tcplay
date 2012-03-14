@@ -1,5 +1,5 @@
 //
-//  VideoSplashControllerViewViewController.h
+//  SongButton.h
 //  tcplay
 //
 //  Created by Tiago Barufi on 14/03/12.
@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Musica.h"
 
-@interface VideoSplashControllerViewViewController : UIViewController
+@interface SongButton : UIButton
+@property (nonatomic, copy) Musica *song;
 
 @end
