@@ -1,6 +1,7 @@
 <? 
 include_once("header.php");
-if($_REQUEST['ordena']){ $ordena = $_REQUEST['ordena']; }else{ $ordena = 'id'; };
+$ordena = 'id';
+if(@$_REQUEST['ordena']){ $ordena = $_REQUEST['ordena']; };
 ?>
 
 <script language="javascript">
@@ -16,13 +17,14 @@ if($_REQUEST['ordena']){ $ordena = $_REQUEST['ordena']; }else{ $ordena = 'id'; }
     <th><a href="?ordena=setor">Operação / Regional</a></th>
     <th><a href="?ordena=artist">Artista</a></th>
     <th><a href="?ordena=title">Música</a></th>
+    <th><a href="?ordena=genero">Gênero</a></th>
     <th><a href="?ordena=hora DESC">Hora</a></th>
     <th width="40"><a href="?ordena=retirado DESC">Entregue</a></th>
   </tr>
   <?
   
   $sql = "
-  SELECT p.id, p.sorteado, p.setor, j.artist, j.title, p.retirado, p.hora
+  SELECT p.id, p.sorteado, p.setor, j.artist, j.title, j.genero, p.retirado, p.hora
   FROM pedidos p
   LEFT JOIN jukebox j ON p.id_song=j.id
   WHERE p.sorteado != ''
@@ -40,6 +42,7 @@ if($_REQUEST['ordena']){ $ordena = $_REQUEST['ordena']; }else{ $ordena = 'id'; }
       <td><?=$r["setor"]?></td>
       <td><?=$r["artist"]?></td>
       <td><?=$r["title"]?></td>
+      <td><?=$r["genero"]?></td>
       <td><?=date('H:i:s', strtotime($r["hora"]));?></td>
       <td align="center" id="td_ativar" class="td_ativar<?=$r["id"]?>">
 		<? 
