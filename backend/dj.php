@@ -16,11 +16,11 @@ if(@$_REQUEST['ordena']){ $ordena = $_REQUEST['ordena']; };?>
   <?
   
   $sql = "
-  SELECT j.id, j.artist, j.title, j.genero, j.ativo, COUNT(p.id) AS pedidos
+  SELECT j.id, j.artist, j.title, j.genero, j.ativo, COUNT(p.id) AS pedidos,max(p.hora) as h 
   FROM jukebox j
   LEFT JOIN pedidos p ON p.id_song=j.id
   GROUP BY j.id
-  ORDER BY ".$ordena." 
+  ORDER BY ".$ordena.",h desc 
   ";
   $stmt = $pdo->query($sql);
   $i = 0;
