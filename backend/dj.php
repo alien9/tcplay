@@ -10,12 +10,13 @@ if($_REQUEST['ordena']){ $ordena = $_REQUEST['ordena']; }else{ $ordena = 'id'; }
     <th width="40"><a href="?ordena=id">Id</a></th>
     <th><a href="?ordena=artist">Artista</a></th>
     <th><a href="?ordena=title">Música</a></th>
+    <th><a href="?ordena=genero">Gênero</a></th>
     <th><a href="?ordena=pedidos DESC">Pedidos</a></th>
   </tr>
   <?
   
   $sql = "
-  SELECT j.id, j.artist, j.title, j.ativo, COUNT(p.id) AS pedidos
+  SELECT j.id, j.artist, j.title, j.genero, j.ativo, COUNT(p.id) AS pedidos
   FROM jukebox j
   LEFT JOIN pedidos p ON p.id_song=j.id
   GROUP BY j.id
@@ -31,6 +32,7 @@ if($_REQUEST['ordena']){ $ordena = $_REQUEST['ordena']; }else{ $ordena = 'id'; }
       <td align="center"><?=$r["id"]?></td>
       <td><?=$r["artist"]?></td>
       <td><?=$r["title"]?></td>
+      <td><?=$r["genero"]?></td>
       <td><? if($r["pedidos"]){ echo $r["pedidos"]; } ?></td>
     </tr>								
     <?	
