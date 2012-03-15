@@ -17,7 +17,7 @@
     NSArray *generos;
 }
 @property (weak, nonatomic) UITableView *tw;
-@property(nonatomic, retain) NSArray *generos;
+@property(nonatomic) NSArray *generos;
 
 - (IBAction)pinga;
 

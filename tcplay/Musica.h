@@ -12,7 +12,7 @@
 @property (nonatomic, copy) NSString *titulo;
 @property (nonatomic, copy) NSString *performer;
 @property (nonatomic, copy) NSString *genero;
-@property (nonatomic, assign) BOOL prize;
-@property (nonatomic, assign) int rating;
-@property (nonatomic, assign) int id;
+@property (nonatomic, copy) NSString *prize;
+//@property (nonatomic, assign) int *rating;
+@property (nonatomic, copy) NSString *id;
 @end

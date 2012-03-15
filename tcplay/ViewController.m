@@ -96,8 +96,9 @@ NSArray *rows;
         Musica *s=[[Musica alloc]init];
         s.titulo=[[trax objectAtIndex:i] objectForKey: @"title"];
         s.performer=[[trax objectAtIndex:i] objectForKey: @"artist"];
-        s.id=(int)[[trax objectAtIndex:i] objectForKey: @"id"];
+        s.id=[[trax objectAtIndex:i] objectForKey: @"id"];
         s.genero=[[trax objectAtIndex:i] objectForKey: @"genero"];
+        s.prize=[[trax objectAtIndex:i] objectForKey: @"premiado"];
         [ro addObject: s];
         if (![genus containsObject: s.genero]){
             [genus addObject: s.genero];

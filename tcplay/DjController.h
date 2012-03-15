@@ -11,7 +11,11 @@
 
 @interface DjController : UIViewController{
     IBOutlet UILabel *__weak palavras;
+    IBOutlet UIButton *__weak okay;
+    IBOutlet UIActivityIndicatorView *__weak indy;
 }
-@property (nonatomic, assign) Musica *song;
+@property (nonatomic, weak) Musica *song;
+@property (nonatomic, weak) NSString *nome;
+@property (nonatomic, weak) NSString *depto;
 
 @end

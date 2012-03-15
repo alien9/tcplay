@@ -1,5 +1,5 @@
 //
-//  SongButton.h
+//  PrizeFormViewController.h
 //  tcplay
 //
 //  Created by Tiago Barufi on 14/03/12.
@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "Musica.h"
 
-@interface SongButton : UIButton
+@interface PrizeFormViewController : UIViewController{
+    IBOutlet UITextField *__weak nome;
+    IBOutlet UITextField *__weak depto;
+}
+
 @property (nonatomic, weak) Musica *song;
 
 @end

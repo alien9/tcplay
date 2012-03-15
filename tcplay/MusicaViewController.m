@@ -9,7 +9,7 @@
 #import "SongButton.h"
 #import "MusicaViewController.h"
 #import "Classes/SBJson.h"
-#import "DjController.h"
+#import "PrizeFormViewController.h"
 @interface MusicaViewController ()
 @end
 
@@ -131,12 +131,11 @@ NSMutableData *responseData;
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSLog(@"musica %@", @"pichorra");
-    NSLog(@"segue %@", segue.identifier);
-    if ([segue.identifier isEqualToString:@"kick"]) {
-        NSLog(@"ai %@", @"test");
-        NSLog(@"ai %@", [sender song].titulo);
-        DjController *djC = [segue destinationViewController];
-        djC.song = [sender song];
-    }
+    //if ([segue.identifier isEqualToString:@"kick"]) {
+    NSLog(@"ai %@", @"test");
+    NSLog(@"ai %@", [sender song].titulo);
+    PrizeFormViewController *djC = [segue destinationViewController];
+    djC.song = [sender song];
+    //}
 }
 @end
