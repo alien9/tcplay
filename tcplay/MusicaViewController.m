@@ -6,8 +6,10 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 #import "Musica.h"
+#import "SongButton.h"
 #import "MusicaViewController.h"
 #import "Classes/SBJson.h"
+#import "PrizeFormViewController.h"
 @interface MusicaViewController ()
 @end
 
@@ -67,6 +69,8 @@ NSMutableData *responseData;
 	Musica *m = [songs objectAtIndex:indexPath.row];
     ((UILabel *)[cell viewWithTag:100]).text=m.titulo;
     ((UILabel *)[cell viewWithTag:101]).text=m.performer;
+    NSLog(@"pichorra um");
+    ((SongButton *)[cell viewWithTag:1]).song=m;
     return cell;
 }
 
@@ -121,5 +125,17 @@ NSMutableData *responseData;
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
 }
-
+- (IBAction) pop:(id)sender {
+    NSLog(@"Button pressed: %@", [sender currentTitle]);
+    [self performSegueWithIdentifier: @"popo" sender: self];
+}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"musica %@", @"pichorra");
+    //if ([segue.identifier isEqualToString:@"kick"]) {
+    NSLog(@"ai %@", @"test");
+    NSLog(@"ai %@", [sender song].titulo);
+    PrizeFormViewController *djC = [segue destinationViewController];
+    djC.song = [sender song];
+    //}
+}
 @end

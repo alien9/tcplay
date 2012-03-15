@@ -15,6 +15,10 @@
 		F101C9A5150FEB0600E059D7 /* MusicaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F101C9A3150FEB0600E059D7 /* MusicaViewController.m */; };
 		F101C9A8150FEB7A00E059D7 /* Musica.m in Sources */ = {isa = PBXBuildFile; fileRef = F101C9A7150FEB7A00E059D7 /* Musica.m */; };
 		F101C9A9150FEB7A00E059D7 /* Musica.m in Sources */ = {isa = PBXBuildFile; fileRef = F101C9A7150FEB7A00E059D7 /* Musica.m */; };
+		F11713091511459200606958 /* logo_preto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F11713081511459200606958 /* logo_preto.jpg */; };
+		F117130C1511474B00606958 /* icone.png in Resources */ = {isa = PBXBuildFile; fileRef = F117130B1511474B00606958 /* icone.png */; };
+		F117130E1511478200606958 /* icone_72.png in Resources */ = {isa = PBXBuildFile; fileRef = F117130D1511478200606958 /* icone_72.png */; };
+		F14572AB15117E1B008BC30C /* PrizeFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14572AA15117E1B008BC30C /* PrizeFormViewController.m */; };
 		F18027BB150DC251000DB9E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18027BA150DC251000DB9E5 /* UIKit.framework */; };
 		F18027BD150DC251000DB9E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18027BC150DC251000DB9E5 /* Foundation.framework */; };
 		F18027BF150DC251000DB9E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18027BE150DC251000DB9E5 /* CoreGraphics.framework */; };
@@ -28,6 +32,13 @@
 		F18027DB150DC251000DB9E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18027BC150DC251000DB9E5 /* Foundation.framework */; };
 		F18027E3150DC251000DB9E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F18027E1150DC251000DB9E5 /* InfoPlist.strings */; };
 		F18027E6150DC251000DB9E5 /* tcplayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F18027E5150DC251000DB9E5 /* tcplayTests.m */; };
+		F1C75BAC1510BE8B00108754 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = F1C75BAB1510BE8B00108754 /* play.png */; };
+		F1C75BAF1510C2F600108754 /* GeneroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C75BAE1510C2F500108754 /* GeneroViewController.m */; };
+		F1C75BB21510C5CA00108754 /* GeneroView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C75BB11510C5CA00108754 /* GeneroView.m */; };
+		F1C75BB815111FBE00108754 /* Splash.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C75BB715111FBE00108754 /* Splash.m */; };
+		F1C75BBF151123FD00108754 /* logo_branco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1C75BBE151123FD00108754 /* logo_branco.jpg */; };
+		F1C75BC2151126B100108754 /* SongButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C75BC1151126B100108754 /* SongButton.m */; };
+		F1C75BC5151129B200108754 /* DjController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C75BC4151129B200108754 /* DjController.m */; };
 		F1F98C62150EEE3D0002259B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F98C61150EEE3D0002259B /* MediaPlayer.framework */; };
 		F1FA22EE150E28FF00A172AA /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FA22D6150E28FF00A172AA /* NSObject+SBJson.m */; };
 		F1FA22EF150E28FF00A172AA /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FA22D9150E28FF00A172AA /* SBJsonParser.m */; };
@@ -61,6 +72,11 @@
 		F101C9A3150FEB0600E059D7 /* MusicaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicaViewController.m; sourceTree = "<group>"; };
 		F101C9A6150FEB7A00E059D7 /* Musica.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Musica.h; sourceTree = "<group>"; };
 		F101C9A7150FEB7A00E059D7 /* Musica.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Musica.m; sourceTree = "<group>"; };
+		F11713081511459200606958 /* logo_preto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo_preto.jpg; sourceTree = "<group>"; };
+		F117130B1511474B00606958 /* icone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone.png; sourceTree = "<group>"; };
+		F117130D1511478200606958 /* icone_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone_72.png; sourceTree = "<group>"; };
+		F14572A915117E1B008BC30C /* PrizeFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrizeFormViewController.h; sourceTree = "<group>"; };
+		F14572AA15117E1B008BC30C /* PrizeFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrizeFormViewController.m; sourceTree = "<group>"; };
 		F18027B6150DC251000DB9E5 /* tcplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tcplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18027BA150DC251000DB9E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F18027BC150DC251000DB9E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,6 +96,18 @@
 		F18027E2150DC251000DB9E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F18027E4150DC251000DB9E5 /* tcplayTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tcplayTests.h; sourceTree = "<group>"; };
 		F18027E5150DC251000DB9E5 /* tcplayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tcplayTests.m; sourceTree = "<group>"; };
+		F1C75BAB1510BE8B00108754 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		F1C75BAD1510C2F500108754 /* GeneroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneroViewController.h; sourceTree = "<group>"; };
+		F1C75BAE1510C2F500108754 /* GeneroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneroViewController.m; sourceTree = "<group>"; };
+		F1C75BB01510C5CA00108754 /* GeneroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneroView.h; sourceTree = "<group>"; };
+		F1C75BB11510C5CA00108754 /* GeneroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneroView.m; sourceTree = "<group>"; };
+		F1C75BB615111FBE00108754 /* Splash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Splash.h; sourceTree = "<group>"; };
+		F1C75BB715111FBE00108754 /* Splash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Splash.m; sourceTree = "<group>"; };
+		F1C75BBE151123FD00108754 /* logo_branco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo_branco.jpg; sourceTree = "<group>"; };
+		F1C75BC0151126B100108754 /* SongButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongButton.h; sourceTree = "<group>"; };
+		F1C75BC1151126B100108754 /* SongButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongButton.m; sourceTree = "<group>"; };
+		F1C75BC3151129B200108754 /* DjController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DjController.h; sourceTree = "<group>"; };
+		F1C75BC4151129B200108754 /* DjController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DjController.m; sourceTree = "<group>"; };
 		F1F98C61150EEE3D0002259B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		F1FA22D5150E28FF00A172AA /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
 		F1FA22D6150E28FF00A172AA /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
@@ -136,6 +164,9 @@
 		F101C998150FA26000E059D7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F11713081511459200606958 /* logo_preto.jpg */,
+				F1C75BBE151123FD00108754 /* logo_branco.jpg */,
+				F1C75BAB1510BE8B00108754 /* play.png */,
 				F101C99B150FA99300E059D7 /* tcplay.mp4 */,
 			);
 			name = Resources;
@@ -144,6 +175,8 @@
 		F18027AB150DC251000DB9E5 = {
 			isa = PBXGroup;
 			children = (
+				F117130D1511478200606958 /* icone_72.png */,
+				F117130B1511474B00606958 /* icone.png */,
 				F18027C0150DC251000DB9E5 /* tcplay */,
 				F18027DE150DC251000DB9E5 /* tcplayTests */,
 				F18027B9150DC251000DB9E5 /* Frameworks */,
@@ -180,10 +213,22 @@
 				F18027C9150DC251000DB9E5 /* AppDelegate.h */,
 				F18027CA150DC251000DB9E5 /* AppDelegate.m */,
 				F18027CC150DC251000DB9E5 /* MainStoryboard.storyboard */,
+				F14572A915117E1B008BC30C /* PrizeFormViewController.h */,
+				F14572AA15117E1B008BC30C /* PrizeFormViewController.m */,
+				F1C75BC3151129B200108754 /* DjController.h */,
+				F1C75BC4151129B200108754 /* DjController.m */,
+				F1C75BC0151126B100108754 /* SongButton.h */,
+				F1C75BC1151126B100108754 /* SongButton.m */,
 				F101C9A2150FEB0600E059D7 /* MusicaViewController.h */,
+				F1C75BAD1510C2F500108754 /* GeneroViewController.h */,
+				F1C75BAE1510C2F500108754 /* GeneroViewController.m */,
+				F1C75BB01510C5CA00108754 /* GeneroView.h */,
+				F1C75BB11510C5CA00108754 /* GeneroView.m */,
 				F101C9A6150FEB7A00E059D7 /* Musica.h */,
 				F101C9A7150FEB7A00E059D7 /* Musica.m */,
 				F101C9A3150FEB0600E059D7 /* MusicaViewController.m */,
+				F1C75BB615111FBE00108754 /* Splash.h */,
+				F1C75BB715111FBE00108754 /* Splash.m */,
 				F101C99E150FEA6F00E059D7 /* MusicaCell.h */,
 				F101C99F150FEA6F00E059D7 /* MusicaCell.m */,
 				F18027CF150DC251000DB9E5 /* ViewController.h */,
@@ -329,6 +374,11 @@
 				F18027C5150DC251000DB9E5 /* InfoPlist.strings in Resources */,
 				F18027CE150DC251000DB9E5 /* MainStoryboard.storyboard in Resources */,
 				F101C99C150FA99300E059D7 /* tcplay.mp4 in Resources */,
+				F1C75BAC1510BE8B00108754 /* play.png in Resources */,
+				F1C75BBF151123FD00108754 /* logo_branco.jpg in Resources */,
+				F11713091511459200606958 /* logo_preto.jpg in Resources */,
+				F117130C1511474B00606958 /* icone.png in Resources */,
+				F117130E1511478200606958 /* icone_72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +432,12 @@
 				F101C9A0150FEA6F00E059D7 /* MusicaCell.m in Sources */,
 				F101C9A4150FEB0600E059D7 /* MusicaViewController.m in Sources */,
 				F101C9A8150FEB7A00E059D7 /* Musica.m in Sources */,
+				F1C75BAF1510C2F600108754 /* GeneroViewController.m in Sources */,
+				F1C75BB21510C5CA00108754 /* GeneroView.m in Sources */,
+				F1C75BB815111FBE00108754 /* Splash.m in Sources */,
+				F1C75BC2151126B100108754 /* SongButton.m in Sources */,
+				F1C75BC5151129B200108754 /* DjController.m in Sources */,
+				F14572AB15117E1B008BC30C /* PrizeFormViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

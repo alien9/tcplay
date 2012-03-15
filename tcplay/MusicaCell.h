@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface MusicaCell : UITableViewCell{
-    IBOutlet UILabel *title;
-    IBOutlet UILabel *subtitle;
+    IBOutlet UILabel *__weak title;
+    IBOutlet UILabel *__weak subtitle;
 }
-@property (nonatomic) UILabel *title;
-@property (nonatomic) UILabel *subtitle;
+@property (weak, nonatomic) UILabel *title;
+@property (weak, nonatomic) UILabel *subtitle;
 @end

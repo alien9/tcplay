@@ -4,6 +4,7 @@ include_once("config.inc.php");
 
 $s=$pdo->prepare("select * from jukebox where premiado=0");
 $s->execute();
+
 $o=$s->fetchAll();
 
 $ip=$_SERVER['REMOTE_ADDR'];

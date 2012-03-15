@@ -11,6 +11,8 @@
 @implementation Musica
 @synthesize titulo;
 @synthesize performer;
-@synthesize rating;
+//@synthesize rating;
+@synthesize genero;
+@synthesize prize;
 @synthesize id;
 @end
