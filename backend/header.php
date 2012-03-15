@@ -8,6 +8,7 @@
 <? include_once("config.inc.php"); ?>
 <script type="text/javascript" src="funcoes.js"></script>
 <script type="text/javascript" src="jquery.js"></script>
+<meta http-equiv="refresh" content="5; URL=<?=$_SERVER['REQUEST_URI'] ?>" >
 </head>
 
 <body>
