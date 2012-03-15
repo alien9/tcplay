@@ -7,13 +7,14 @@
 <title>TC PLAY</title>
 <? include_once("config.inc.php"); ?>
 <script type="text/javascript" src="funcoes.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
 </head>
 
 <body>
 <div id="logo"><img src="img/logo.jpg" hspace="10" vspace="10" /></div> 
 <div id="menu"> 
 <a href="dj.php">Lista de músicas</a>|
-<a href="premiados.php">Premiados</a>|
+<a href="premiados.php">Premiados</a>
 </div> 
 <center> 
 <div id="conteudo">

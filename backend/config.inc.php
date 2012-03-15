@@ -9,7 +9,7 @@ break;
 case 'leandro':
 	$dsn = "mysql:localhost;port=3306;dbname=tcplay";
 	$usuario = "root";
-	$senha = "";
+	$senha = "ludovico";
 	break;
 default:
 	$dsn = "mysql:localhost;port=3306;dbname=tcplay";
