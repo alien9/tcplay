@@ -1,7 +1,7 @@
 <? 
 include_once("header.php");
-if($_REQUEST['ordena']){ $ordena = $_REQUEST['ordena']; }else{ $ordena = 'id'; };
-?>
+$ordena = 'id';
+if($_REQUEST['ordena']){ $ordena = $_REQUEST['ordena']; };?>
 
 <h1>Lista de músicas</h1>
 
