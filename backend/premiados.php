@@ -7,7 +7,7 @@ if($_REQUEST['ordena']){ $ordena = $_REQUEST['ordena']; }else{ $ordena = 'id'; }
 	ativarDesativar('ped');								 
 </script>
 
-<h1>Lista de músicas</h1>
+<h1>Lista de premiados</h1>
 
 <table class="table_listas">
   <tr height="20">
