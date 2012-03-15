@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="fbw-Lb-UJC">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
     </dependencies>
@@ -77,12 +76,12 @@
                     <connections>
                         <outlet property="show" destination="dzl-Em-sWS" id="z1w-Gu-wEW"/>
                         <outlet property="tw" destination="2GU-yL-YoX" id="Qmn-S0-85P"/>
-                        <segue destination="1Cz-9J-Iob" kind="modal" identifier="vaivai" modalTransitionStyle="flipHorizontal" id="p5l-XF-6jc"/>
+                        <segue destination="QY1-ou-Gvq" kind="modal" identifier="vaivai" modalTransitionStyle="flipHorizontal" id="8u2-BY-bcG"/>
                     </connections>
                 </viewController>
                 <tapGestureRecognizer enabled="NO" id="fhr-0v-tyU"/>
             </objects>
-            <point key="canvasLocation" x="-170" y="-126"/>
+            <point key="canvasLocation" x="-250" y="42"/>
         </scene>
         <!--Prize Form View Controller-->
         <scene sceneID="8v7-Dj-wIC">
@@ -164,41 +163,40 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1851" y="-1688"/>
+            <point key="canvasLocation" x="2955" y="-840"/>
         </scene>
-        <!--Musica View Controller - PlayList-->
-        <scene sceneID="lA5-cB-DIy">
+        <!--Musica View Controller - Titulo-->
+        <scene sceneID="Oe2-zw-b5Z">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BSp-h7-rOU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController storyboardIdentifier="playlist" title="PlayList" modalTransitionStyle="flipHorizontal" id="1Cz-9J-Iob" customClass="MusicaViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" id="fci-LA-ery">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hlQ-JS-2zf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController title="Titulo" id="0fq-Ep-KAk" customClass="MusicaViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" id="2dV-UK-eSq">
+                        <rect key="frame" x="0.0" y="44" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <color key="separatorColor" red="1" green="0.98765432098765427" blue="0.98765432098765427" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="song" rowHeight="75" id="ebB-1z-dwe" customClass="MusicaCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="song" rowHeight="75" id="iNW-np-gBB" customClass="MusicaCell">
                                 <rect key="frame" x="0.0" y="22" width="768" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="74"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="IXH-AH-qEc" userLabel="Title">
-                                            <rect key="frame" x="74" y="7" width="297" height="60"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="aYe-hB-9xn" userLabel="Title">
+                                            <rect key="frame" x="435" y="7" width="297" height="60"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" id="S4e-q5-dGj" userLabel="Subtitle">
-                                            <rect key="frame" x="408" y="13" width="351" height="48"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" id="pU0-lg-Kiu" userLabel="Subtitle">
+                                            <rect key="frame" x="67" y="13" width="351" height="48"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TFS-2d-GKa" customClass="SongButton">
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2cI-as-Sh1" customClass="SongButton">
                                             <rect key="frame" x="10" y="7" width="49" height="60"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -211,23 +209,46 @@
                                                 <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
-                                                <segue destination="fBJ-LG-7fA" kind="modal" modalTransitionStyle="flipHorizontal" id="pAq-g0-qpg"/>
+                                                <segue destination="fBJ-LG-7fA" kind="modal" identifier="kick" id="MUY-d1-wWD"/>
                                             </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="1Cz-9J-Iob" id="eiw-iR-api"/>
-                            <outlet property="delegate" destination="1Cz-9J-Iob" id="Xdc-5M-edp"/>
-                        </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="hh4-Cm-ZhZ"/>
+                    <navigationItem key="navigationItem" title="Pichorra" id="u4o-T8-bhS">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="GCz-Su-LNj"/>
+                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="1gW-m1-YvF">
+                            <connections>
+                                <segue destination="2" kind="modal" id="9Ew-sq-mik"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <connections>
+                        <outlet property="bandeira" destination="u4o-T8-bhS" id="lba-JR-8dV"/>
+                    </connections>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="864" y="-562"/>
+            <point key="canvasLocation" x="2000" y="301"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nIO-4S-pmR">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P47-2H-OfD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="QY1-ou-Gvq" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BmT-FR-zFy">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="0fq-Ep-KAk" kind="relationship" relationship="rootViewController" id="t2K-CS-lFC"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="708" y="1333"/>
         </scene>
         <!--Splash-->
         <scene sceneID="Wvo-bN-0kG">
@@ -245,11 +266,11 @@
                 </viewController>
                 <tapGestureRecognizer id="UKN-ez-ZuN">
                     <connections>
-                        <segue destination="2" kind="modal" id="yNq-OO-saU"/>
+                        <segue destination="2" kind="modal" identifier="other" modalTransitionStyle="crossDissolve" id="yNq-OO-saU"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1193" y="-1262"/>
+            <point key="canvasLocation" x="-1289" y="42"/>
         </scene>
         <!--Dj Controller-->
         <scene sceneID="Iem-op-r03">
@@ -301,7 +322,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="574" y="-1914"/>
+            <point key="canvasLocation" x="3670" y="-1426"/>
         </scene>
     </scenes>
     <resources>
@@ -317,6 +338,9 @@
         </class>
         <class className="MusicaViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MusicaViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bandeira" candidateClass="UINavigationItem"/>
+            </relationships>
         </class>
         <class className="PrizeFormViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PrizeFormViewController.h"/>

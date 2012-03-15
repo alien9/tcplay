@@ -10,6 +10,7 @@
 
 @interface MusicaViewController : UITableViewController{
     NSMutableData *responseData;
+    IBOutlet UINavigationItem *bandeira;
 }
 @property (nonatomic, copy) NSArray *songs;
 @end

@@ -19,6 +19,7 @@
 		F117130C1511474B00606958 /* icone.png in Resources */ = {isa = PBXBuildFile; fileRef = F117130B1511474B00606958 /* icone.png */; };
 		F117130E1511478200606958 /* icone_72.png in Resources */ = {isa = PBXBuildFile; fileRef = F117130D1511478200606958 /* icone_72.png */; };
 		F14572AB15117E1B008BC30C /* PrizeFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14572AA15117E1B008BC30C /* PrizeFormViewController.m */; };
+		F14572AE1511B35D008BC30C /* NavegaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14572AD1511B35D008BC30C /* NavegaViewController.m */; };
 		F18027BB150DC251000DB9E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18027BA150DC251000DB9E5 /* UIKit.framework */; };
 		F18027BD150DC251000DB9E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18027BC150DC251000DB9E5 /* Foundation.framework */; };
 		F18027BF150DC251000DB9E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18027BE150DC251000DB9E5 /* CoreGraphics.framework */; };
@@ -77,6 +78,8 @@
 		F117130D1511478200606958 /* icone_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icone_72.png; sourceTree = "<group>"; };
 		F14572A915117E1B008BC30C /* PrizeFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrizeFormViewController.h; sourceTree = "<group>"; };
 		F14572AA15117E1B008BC30C /* PrizeFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrizeFormViewController.m; sourceTree = "<group>"; };
+		F14572AC1511B35D008BC30C /* NavegaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavegaViewController.h; sourceTree = "<group>"; };
+		F14572AD1511B35D008BC30C /* NavegaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavegaViewController.m; sourceTree = "<group>"; };
 		F18027B6150DC251000DB9E5 /* tcplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tcplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18027BA150DC251000DB9E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F18027BC150DC251000DB9E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -213,6 +216,8 @@
 				F18027C9150DC251000DB9E5 /* AppDelegate.h */,
 				F18027CA150DC251000DB9E5 /* AppDelegate.m */,
 				F18027CC150DC251000DB9E5 /* MainStoryboard.storyboard */,
+				F14572AC1511B35D008BC30C /* NavegaViewController.h */,
+				F14572AD1511B35D008BC30C /* NavegaViewController.m */,
 				F14572A915117E1B008BC30C /* PrizeFormViewController.h */,
 				F14572AA15117E1B008BC30C /* PrizeFormViewController.m */,
 				F1C75BC3151129B200108754 /* DjController.h */,
@@ -438,6 +443,7 @@
 				F1C75BC2151126B100108754 /* SongButton.m in Sources */,
 				F1C75BC5151129B200108754 /* DjController.m in Sources */,
 				F14572AB15117E1B008BC30C /* PrizeFormViewController.m in Sources */,
+				F14572AE1511B35D008BC30C /* NavegaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

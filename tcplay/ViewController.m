@@ -11,7 +11,7 @@
 #import "Classes/SBJson.h"
 #import "Musica.h"
 #import "MusicaViewController.h"
-
+#import "NavegaViewController.h"
 @interface ViewController ()
 
 @end
@@ -26,22 +26,14 @@ NSArray *rows;
 - (void)viewDidLoad
 {
     self.generos=[[NSArray alloc] init];
-    
     [super viewDidLoad];
-    show.text=@"peganingas";
-    [show setText:@"Hello, World!"];
-    
-	// Do any additional setup after loading the view, typically from a nib.
-    NSString *jsonString = [NSString stringWithString:@"{\"foo\": \"bar\"}"];
-	NSDictionary *dictionary = [jsonString JSONValue];
-	NSLog(@"Dictionary value for \"foo\" is \"%@\"", [dictionary objectForKey:@"foo"]);
     [self pull];
 }
 
 
 - (void)pull{
     responseData = [NSMutableData data];
-	NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.0.105/works/tcplay/backend/juke.php"]];
+	NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.0.113/tcplay/juke.php"]];
 	[[NSURLConnection alloc] initWithRequest:request delegate:self];
 }
 
@@ -118,7 +110,6 @@ NSArray *rows;
     return [self.generos count];
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSLog(@"sending");
     if ([segue.identifier isEqualToString:@"vaivai"]) {
         NSMutableArray *mu = [[NSMutableArray alloc]init];
         for (int i = 0; i < [rows count]; i++){
@@ -126,11 +117,10 @@ NSArray *rows;
                 [mu addObject:[rows objectAtIndex:i]];
             }
         }
-        NSLog(@"peganingas");
-        MusicaViewController *ibcVC = [segue destinationViewController];
-        NSLog(@"mais");
-        ibcVC.songs = mu;
-        NSLog(@"copiou");
+        NavegaViewController *ibcVC = [segue destinationViewController];
+        MusicaViewController *mumia = [ibcVC.viewControllers objectAtIndex:0];
+        mumia.songs=mu;
+        [mumia setTitle:genero];
     }
 }
 
