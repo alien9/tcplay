@@ -29,8 +29,6 @@ NSMutableData *responseData;
 
 - (void)viewDidLoad
 {
-
-    NSLog(song.titulo);
     //palavras.text=[NSString stringWithFormat:@"ENVIEI %@", song.titulo];
 	// Do any additional setup after loading the view.
     [super viewDidLoad];
@@ -48,33 +46,17 @@ NSMutableData *responseData;
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-
-- (void)pulla{
-    responseData = [NSMutableData data];
-	NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.0.105/works/tcplay/backend/juke.php"]];
- 
-	[[NSURLConnection alloc] initWithRequest:request delegate:self];
-}
-
 - (void)pull{
     responseData = [NSMutableData data];
-    NSLog(@"posting");
     NSString *post = [NSString stringWithFormat:@"id=%@&nome=%@&depto=%@", song.id, nome, depto];
     NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
-
-    //NSLog(post);
-//	NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.0.105/works/tcplay/backend/play.php"]];
     NSString *postLength = [NSString stringWithFormat:@"%d", [postData length]];
-    //NSLog(postLength);
-
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-    [request setURL:[NSURL URLWithString:@"http://192.168.0.105/works/tcplay/backend/play.php"]];
+    [request setURL:[NSURL URLWithString:@"http://192.168.0.113/tcplay/play.php"]];
     [request setHTTPMethod:@"POST"];
     [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
     [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     [request setHTTPBody:postData];
-    //NSLog(@"en viado");
-
 	[[NSURLConnection alloc] initWithRequest:request delegate:self];
 }
 
@@ -91,10 +73,7 @@ NSMutableData *responseData;
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    NSLog(@"voltou");
 	NSString *responseString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-    
-	//NSArray *trax = [responseString JSONValue];
     //palavras.text=responseString;
     palavras.hidden=NO;
     okay.hidden=NO;

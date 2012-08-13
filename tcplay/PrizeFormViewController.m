@@ -59,9 +59,6 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSLog(@"musica %@", @"pichorra");
-    NSLog(@"ai %@", @"test");
-    NSLog(@"ai %@", song.titulo);
     DjController *djC = [segue destinationViewController];
     djC.song = song;
     djC.nome = nome.text;

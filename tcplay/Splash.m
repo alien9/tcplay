@@ -49,8 +49,6 @@ MPMoviePlayerController *videoPlayer;
      object:player];
     [player stop];
     [self performSegueWithIdentifier: @"papa" sender: self];
-    //    [self.view removeFromSuperView];
-    //   [player autorelease];    
 }
 -(void)viewWillAppear:(BOOL)animated
 {
